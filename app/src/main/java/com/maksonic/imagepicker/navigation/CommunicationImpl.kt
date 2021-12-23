@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.maksonic.imagepicker.R
-import com.maksonic.imagepicker.feature_picker.navigation.Communication
+import com.maksonic.imagepicker.core.Communication
 
 /**
  * @Author: maksonic on 23.12.2021

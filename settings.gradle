@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "ImagePicker"
 include ':app'
 include ':feature-picker'
+include ':core'

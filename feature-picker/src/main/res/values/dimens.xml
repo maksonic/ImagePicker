@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding_32">32dp</dimen>
-    <dimen name="padding_16dp">16dp</dimen>
-    <dimen name="padding_8dp">8dp</dimen>
-    <dimen name="corner_radius_16dp">16dp</dimen>
+    <dimen name="files_panel_height">72dp</dimen>
 </resources>

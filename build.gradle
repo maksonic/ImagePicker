@@ -5,6 +5,7 @@ buildscript {
         navigationFragment = '2.3.5'
         fragment = '1.4.0'
         koinVersion = '3.1.4'
+        constraint = '2.1.2'
 
     }
     repositories {

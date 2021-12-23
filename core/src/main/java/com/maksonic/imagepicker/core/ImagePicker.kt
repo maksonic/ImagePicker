@@ -1,4 +1,4 @@
-package com.maksonic.imagepicker.feature_picker
+package com.maksonic.imagepicker.core
 
 import android.view.View
 import androidx.activity.result.ActivityResultLauncher

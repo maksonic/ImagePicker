@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="btn_select_image">Выбрать изображение</string>
+    <string name="toolbar_title_gallery">Галерея</string>
+    <string name="open">Открыть</string>
+    <string name="search">Поиск</string>
 </resources>

@@ -1,7 +1,6 @@
-package com.maksonic.imagepicker.feature_picker.navigation
+package com.maksonic.imagepicker.core
 
 import android.net.Uri
-import android.os.Bundle
 import android.os.Parcelable
 import androidx.fragment.app.Fragment
 
