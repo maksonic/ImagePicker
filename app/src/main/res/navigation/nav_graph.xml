@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/imagePickerScreen">
+
+    <fragment
+        android:id="@+id/imagePickerScreen"
+        android:name="com.maksonic.imagepicker.feature_picker.ImagePickerScreen"
+        android:label="ImagePickerScreen" >
+        <action
+            android:id="@+id/action_imagePickerScreen_to_imagePickerBottomSheet"
+            app:destination="@id/imagePickerBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/imagePickerBottomSheet"
+        android:name="com.maksonic.imagepicker.feature_picker.ImagePickerBottomSheet"
+        android:label="ImagePickerBottomSheet" >
+        <action
+            android:id="@+id/action_imagePickerBottomSheet_to_imagePickerScreen"
+            app:destination="@id/imagePickerScreen" />
+    </dialog>
+</navigation>
