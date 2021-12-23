@@ -2,6 +2,7 @@ package com.maksonic.imagepicker.feature_picker.navigation
 
 import android.net.Uri
 import android.os.Bundle
+import android.os.Parcelable
 import androidx.fragment.app.Fragment
 
 /**
@@ -10,5 +11,5 @@ import androidx.fragment.app.Fragment
 interface Communication {
 
     fun showPickerSheet(fragment: Fragment)
-    fun selectImage(fragment: Fragment, image: Uri?, imageData: Bundle?)
+    fun selectImage(fragment: Fragment, image: Uri?, imageData: Parcelable?)
 }
