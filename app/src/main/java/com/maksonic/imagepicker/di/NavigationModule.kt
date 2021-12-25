@@ -11,5 +11,4 @@ import org.koin.dsl.module
 val navigationModule = module {
     single { SafeNavigation() }
     single<Communication> { CommunicationImpl(get()) }
-
 }

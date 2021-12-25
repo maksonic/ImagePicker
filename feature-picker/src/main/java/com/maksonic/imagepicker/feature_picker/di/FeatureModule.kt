@@ -8,6 +8,5 @@ import org.koin.dsl.module
  * @Author: maksonic on 23.12.2021
  */
 val featureModule = module {
-
     viewModel { ImagePickerViewModel(get()) }
 }

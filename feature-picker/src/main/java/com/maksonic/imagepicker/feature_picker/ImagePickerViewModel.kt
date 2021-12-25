@@ -4,9 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Application
 import android.content.ContentUris
 import android.database.ContentObserver
-import android.database.Cursor
 import android.provider.MediaStore
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers

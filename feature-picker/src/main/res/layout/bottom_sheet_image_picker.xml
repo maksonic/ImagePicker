@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottomSheetLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layoutDescription="@xml/sheet_scene"
     app:behavior_hideable="true"
+    app:layoutDescription="@xml/sheet_scene"
     app:layout_behavior="@string/bottom_sheet_behavior">
 
     <View
         android:id="@+id/sheetIndicator"
         android:layout_width="48dp"
         android:layout_height="2dp"
-        android:layout_marginTop="@dimen/padding_8dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_8"
         android:background="@drawable/sheet_indicator" />
 
     <com.google.android.material.appbar.AppBarLayout
@@ -24,41 +24,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorOnPrimary">
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/toolbar_title_gallery"
+            android:background="?attr/colorOnPrimary"
+            app:menu="@menu/picker"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
             app:navigationIconTint="?attr/colorOnSecondary"
-            app:titleTextColor="?attr/colorOnSecondary"
-            android:background="?attr/colorOnPrimary"
-            app:menu="@menu/picker"/>
+            app:title="@string/toolbar_title_gallery"
+            app:titleTextColor="?attr/colorOnSecondary" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerGallery"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:useDefaultMargins="true"
-        android:layout_marginTop="@dimen/padding_8dp"
+        android:layout_marginEnd="@dimen/padding_8"
+        android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="3"
-        android:layout_marginEnd="@dimen/padding_8dp"
-        android:clipToPadding="false"
         tools:listitem="@layout/item_image" />
-
-    <FrameLayout
-        android:id="@+id/filesPanelContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <View
-            android:id="@+id/switchFilesCategoryPanel"
-            android:layout_width="match_parent"
-            android:layout_gravity="bottom"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorSecondary" />
-    </FrameLayout>
-
-
 </androidx.constraintlayout.motion.widget.MotionLayout>
