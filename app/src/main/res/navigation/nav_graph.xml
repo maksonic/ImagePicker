@@ -18,6 +18,8 @@
         android:label="ImagePickerBottomSheet" >
         <action
             android:id="@+id/action_imagePickerBottomSheet_to_imagePickerScreen"
-            app:destination="@id/imagePickerScreen" />
+            app:destination="@id/imagePickerScreen"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/imagePickerScreen"/>
     </dialog>
 </navigation>
